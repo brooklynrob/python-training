@@ -13,7 +13,7 @@ ipyleaflet
 ipympl
 ipysheet
 ipywidgets
-jupyterlab>=3.3
+jupyterlab>=3.6.5
 jupyterlab-nbconvert-nocode
 jupyterlab-templates
 matplotlib
