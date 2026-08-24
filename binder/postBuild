@@ -2,4 +2,3 @@
 
 jupyter server extension enable --py jupyterlab
 jupyter server extension enable --py jupyterlab_templates
-jupyter server extension enable --py nbresuse

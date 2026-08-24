@@ -19,7 +19,6 @@ jupyterlab-templates
 matplotlib
 mimesis
 nbdime
-nbresuse
 numba
 numpy
 openpyxl
