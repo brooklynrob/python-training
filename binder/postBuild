@@ -1,22 +1,7 @@
 #!/bin/bash
-export NODE_OPTIONS=--max-old-space-size=2048
 
-EXTENSIONS="
-@finos/perspective-jupyterlab@2.3.1
-"
-
-until jupyter labextension install $EXTENSIONS --no-build
-do
-    echo "Extension failed to install"
-done
-
-until jupyter lab build --dev-build=False --minimize=False
-do
-    echo "Extension failed to install"
-done
-
-jupyter serverextension enable --py jupyterlab
-jupyter serverextension enable --py jupyterlab_templates
-jupyter serverextension enable --py nbresuse
+jupyter server extension enable --py jupyterlab
+jupyter server extension enable --py jupyterlab_templates
+jupyter server extension enable --py nbresuse
 
 python3 -m spacy download en_core_web_sm
