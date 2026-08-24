@@ -3,5 +3,3 @@
 jupyter server extension enable --py jupyterlab
 jupyter server extension enable --py jupyterlab_templates
 jupyter server extension enable --py nbresuse
-
-python3 -m spacy download en_core_web_sm
